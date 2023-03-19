@@ -1,13 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Worker">
 
 	<PropertyGroup>
 		<TargetFramework>net5.0</TargetFramework>
-		<OutputType>Exe</OutputType>
 	</PropertyGroup>
-
-	<ItemGroup>
-		<ProjectReference Include="..\Restaurant.Messages\Restaurant.Messages.csproj" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="MassTransit.AspNetCore" Version="7.3.0" />
@@ -17,4 +12,7 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<ProjectReference Include="..\Restaurant.Messages\Restaurant.Messages.csproj" />
+	</ItemGroup>
 </Project>
